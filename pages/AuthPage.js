@@ -4,7 +4,7 @@ class AuthPage {
   constructor(page) {
     this.page = page;
     this.email = page.getByRole('textbox', { name: 'Email' });
-    this.password = page.getByLabel('Password');
+    this.password = page.locator('input[type="password"]');
     this.username = page.getByRole('textbox', { name: 'Username' });
     this.submit = page.getByRole('button', { name: /Sign (in|up)/ });
   }

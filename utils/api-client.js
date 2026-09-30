@@ -10,7 +10,9 @@ class ConduitApi {
     const response = await this.request.post(`${this.baseURL}/users`, {
       data: { user },
     });
-    expect(response.status()).toBe(201);
+    if (response.status() !== 201) {
+      throw new Error(`POST /users failed with ${response.status()}: ${await response.text()}`);
+    }
     const body = await response.json();
     return body.user;
   }

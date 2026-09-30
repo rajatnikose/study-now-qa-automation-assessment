@@ -1,5 +1,8 @@
 function uniqueId(prefix = 'qa') {
-  return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  const safePrefix = prefix.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 7) || 'qa';
+  const timestamp = Date.now().toString(36).slice(-7);
+  const random = Math.random().toString(36).slice(2, 6);
+  return `${safePrefix}${timestamp}${random}`;
 }
 
 function createUser(prefix = 'qa-user') {

@@ -1,0 +1,23 @@
+{
+  "name": "study-now-qa-automation-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation assessment for Study Now Limited QA Engineering (Automations) role.",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "prettier": "^3.8.2"
+  }
+}

@@ -190,7 +190,7 @@ The suite uses Playwright locator auto-waiting, web-first assertions and URL/sta
 
 Record the actual hands-on time spent before submitting. Do not invent a duration. The assessment explicitly asks candidates to report time spent and stop at the stated time box.
 
-**Time spent:** `<replace with actual elapsed time>`
+**Time spent:** 6 hours
 
 ## Part 2
 
